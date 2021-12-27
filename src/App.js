@@ -1,10 +1,14 @@
+import React from "react";
 import "./styles.css";
 
 export default function App() {
+  const [counter, setCounter] = React.useState(0);
   return (
     <div className="App">
-      <h1>Hello CodeSbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <h1>Count</h1>
+      <h2>{counter}</h2>
+      <button>Add </button>
+      <button>Reduce</button>
     </div>
   );
 }
